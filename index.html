@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApexFit | Transform Your Body. Elevate Your Mind.</title>
+  <meta name="description" content="ApexFit is a high-performance training club offering world-class coaching, HIIT, Strength, Yoga, and personalized nutrition. Claim your 7-day free pass today.">
+
+  <!-- Google Fonts: Oswald & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="ApexFit Home">
+        <div class="logo-icon">▲</div>
+        APEX<span>FIT</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <a href="#programs" class="nav-link">Programs</a>
+        <a href="#calculator" class="nav-link">BMI & Calories</a>
+        <a href="#schedule" class="nav-link">Schedule</a>
+        <a href="#trainers" class="nav-link">Trainers</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#testimonials" class="nav-link">Stories</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm btn-nav open-trial-modal" data-plan="pro">
+          Claim Free Pass
+        </button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            NEW SEASON KICKOFF — 50% OFF FIRST MONTH
+          </div>
+          <h1 class="hero-title">
+            Transform Your Body. <br>
+            <span class="text-lime">Elevate Your Mind.</span>
+          </h1>
+          <p class="hero-desc">
+            Experience scientifically-backed strength conditioning, high-intensity intervals, and elite 1-on-1 coaching designed to unlock your ultimate athletic potential.
+          </p>
+
+          <div class="hero-cta-group">
+            <button class="btn btn-primary open-trial-modal" data-plan="pro">
+              Start 7-Day Free Trial
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+            <a href="#programs" class="btn btn-secondary">Explore Programs</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">5K+</div>
+              <div class="stat-label">Active Members</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Elite Coaches</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">98%</div>
+              <div class="stat-label">Goal Success</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-card-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80" 
+              alt="Athlete working out in modern high-performance gym" 
+              class="visual-image"
+              loading="eager"
+            >
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="hero-floating-card floating-card-1">
+            <div class="float-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <div class="float-text">
+              <h4>840 kcal Burned</h4>
+              <p>HIIT Turbo Session</p>
+            </div>
+          </div>
+
+          <div class="hero-floating-card floating-card-2">
+            <div class="float-icon" style="background: rgba(255, 87, 34, 0.15); color: var(--accent-orange);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </div>
+            <div class="float-text">
+              <h4>Zone 4 Cardio</h4>
+              <p>158 BPM Peak Rate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs & Disciplines -->
+    <section class="section-padding" id="programs">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Disciplines & Protocols</span>
+          <h2 class="section-title">Built For Results</h2>
+          <p class="section-subtitle">
+            Whether you want to build lean mass, boost cardio endurance, or improve mobility, our structured programs guide every rep.
+          </p>
+        </div>
+
+        <div class="programs-grid">
+          <!-- Strength & Conditioning -->
+          <div class="glass-card program-card">
+            <div>
+              <div class="program-header">
+                <div class="program-icon-box">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="6" y1="5" x2="6" y2="19"></line>
+                    <line x1="18" y1="5" x2="18" y2="19"></line>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <rect x="4" y="8" width="4" height="8" rx="1"></rect>
+                    <rect x="16" y="8" width="4" height="8" rx="1"></rect>
+                  </svg>
+                </div>
+                <span class="program-badge">Hypertrophy</span>
+              </div>
+              <h3 class="program-title">Strength & Power</h3>
+              <p class="program-desc">
+                Progressive overload barbell training, functional compound movements, and core stability designed to build dense muscular power.
+              </p>
+            </div>
+            <div class="program-meta">
+              <span><strong>Intensity:</strong> High</span>
+              <span><strong>Duration:</strong> 60 Min</span>
+            </div>
+          </div>
+
+          <!-- HIIT & Metabolic -->
+          <div class="glass-card program-card">
+            <div>
+              <div class="program-header">
+                <div class="program-icon-box" style="background: rgba(255, 87, 34, 0.15); color: var(--accent-orange);">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </div>
+                <span class="program-badge">Fat Shred</span>
+              </div>
+              <h3 class="program-title">Apex HIIT & Burn</h3>
+              <p class="program-desc">
+                Heart-pumping interval training combining rowers, kettlebells, and bodyweight plyometrics to torch calories and maximize EPOC afterburn.
+              </p>
+            </div>
+            <div class="program-meta">
+              <span><strong>Intensity:</strong> Max</span>
+              <span><strong>Duration:</strong> 45 Min</span>
+            </div>
+          </div>
+
+          <!-- Cross-Training & Conditioning -->
+          <div class="glass-card program-card">
+            <div>
+              <div class="program-header">
+                <div class="program-icon-box">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m4.93 4.93 4.24 4.24"></path>
+                    <path d="m14.83 9.17 4.24-4.24"></path>
+                    <path d="m14.83 14.83 4.24 4.24"></path>
+                    <path d="m9.17 14.83-4.24 4.24"></path>
+                    <circle cx="12" cy="12" r="4"></circle>
+                  </svg>
+                </div>
+                <span class="program-badge">Athletic</span>
+              </div>
+              <h3 class="program-title">Cross-Training WOD</h3>
+              <p class="program-desc">
+                Gymnastics, Olympic weightlifting, and high-cadence endurance cycles engineered for universal work capacity and stamina.
+              </p>
+            </div>
+            <div class="program-meta">
+              <span><strong>Intensity:</strong> Very High</span>
+              <span><strong>Duration:</strong> 60 Min</span>
+            </div>
+          </div>
+
+          <!-- Yoga & Mobility -->
+          <div class="glass-card program-card">
+            <div>
+              <div class="program-header">
+                <div class="program-icon-box">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a10 10 0 0 0-7.07 17.07L12 22l7.07-2.93A10 10 0 0 0 12 2z"></path>
+                  </svg>
+                </div>
+                <span class="program-badge">Recovery</span>
+              </div>
+              <h3 class="program-title">Yoga & Dynamic Mobility</h3>
+              <p class="program-desc">
+                Active myofascial release, deep tissue elongation, breathwork, and joint stability to accelerate recovery and eliminate stiffness.
+              </p>
+            </div>
+            <div class="program-meta">
+              <span><strong>Intensity:</strong> Low-Med</span>
+              <span><strong>Duration:</strong> 50 Min</span>
+            </div>
+          </div>
+
+          <!-- Combat Boxing -->
+          <div class="glass-card program-card">
+            <div>
+              <div class="program-header">
+                <div class="program-icon-box" style="background: rgba(255, 87, 34, 0.15); color: var(--accent-orange);">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"></path>
+                    <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"></path>
+                    <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"></path>
+                    <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"></path>
+                  </svg>
+                </div>
+                <span class="program-badge">Combat Conditioning</span>
+              </div>
+              <h3 class="program-title">Strike & Box</h3>
+              <p class="program-desc">
+                Heavy bag combinations, footwork drills, slip-and-counter sequences, and rotational core power inspired by championship boxers.
+              </p>
+            </div>
+            <div class="program-meta">
+              <span><strong>Intensity:</strong> High</span>
+              <span><strong>Duration:</strong> 50 Min</span>
+            </div>
+          </div>
+
+          <!-- 1-on-1 Personal Coaching -->
+          <div class="glass-card program-card">
+            <div>
+              <div class="program-header">
+                <div class="program-icon-box">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <span class="program-badge">Bespoke</span>
+              </div>
+              <h3 class="program-title">Elite 1-on-1 Coaching</h3>
+              <p class="program-desc">
+                Dedicated personal training with bio-mechanical assessments, personalized periodized macros, and weekly progress calibration.
+              </p>
+            </div>
+            <div class="program-meta">
+              <span><strong>Intensity:</strong> Customized</span>
+              <span><strong>Duration:</strong> 60 Min</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive BMI & Calorie Calculator -->
+    <section class="section-padding calc-section" id="calculator">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Science & Analytics</span>
+          <h2 class="section-title">Calculate Your Targets</h2>
+          <p class="section-subtitle">
+            Get your instant Body Mass Index (BMI), Basal Metabolic Rate (BMR), and daily calorie targets customized to your specific fitness ambitions.
+          </p>
+        </div>
+
+        <div class="calc-container">
+          <!-- Input Card -->
+          <div class="glass-card calc-form-card">
+            <div class="calc-toggle-wrapper">
+              <button class="calc-toggle-btn active" id="unit-metric" type="button">Metric (cm / kg)</button>
+              <button class="calc-toggle-btn" id="unit-imperial" type="button">Imperial (ft / lbs)</button>
+            </div>
+
+            <form id="calc-form">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label" for="calc-gender">Biological Gender</label>
+                  <select id="calc-gender" class="form-select">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="calc-age">Age (years)</label>
+                  <input type="number" id="calc-age" class="form-input" value="28" min="14" max="95">
+                </div>
+
+                <div class="form-group unit-metric-field">
+                  <label class="form-label" for="calc-height-cm">Height (cm)</label>
+                  <input type="number" id="calc-height-cm" class="form-input" value="180" min="100" max="250">
+                </div>
+
+                <div class="form-group unit-metric-field">
+                  <label class="form-label" for="calc-weight-kg">Weight (kg)</label>
+                  <input type="number" id="calc-weight-kg" class="form-input" value="78" min="30" max="250">
+                </div>
+
+                <div class="form-group unit-imperial-field" style="display: none;">
+                  <label class="form-label" for="calc-height-ft">Height (Feet)</label>
+                  <input type="number" id="calc-height-ft" class="form-input" value="5" min="3" max="8">
+                </div>
+                <div class="form-group unit-imperial-field" style="display: none;">
+                  <label class="form-label" for="calc-height-in">Height (Inches)</label>
+                  <input type="number" id="calc-height-in" class="form-input" value="11" min="0" max="11">
+                </div>
+
+                <div class="form-group unit-imperial-field full-width" style="display: none;">
+                  <label class="form-label" for="calc-weight-lbs">Weight (lbs)</label>
+                  <input type="number" id="calc-weight-lbs" class="form-input" value="172" min="60" max="500">
+                </div>
+
+                <div class="form-group full-width">
+                  <label class="form-label" for="calc-activity">Weekly Activity Level</label>
+                  <select id="calc-activity" class="form-select">
+                    <option value="1.2">Sedentary (Desk Job, minimal exercise)</option>
+                    <option value="1.375">Lightly Active (1-2 workouts / week)</option>
+                    <option value="1.55" selected>Moderately Active (3-5 workouts / week)</option>
+                    <option value="1.725">Very Active (6-7 intense sessions / week)</option>
+                    <option value="1.9">Athlete / Heavy Labor (2x per day training)</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Result Gauge Card -->
+          <div class="glass-card calc-result-card">
+            <h3 style="font-family: var(--font-heading); font-size: 1.3rem; text-transform: uppercase;">
+              Your Health Score
+            </h3>
+
+            <div class="bmi-meter-wrapper">
+              <svg class="bmi-gauge-svg" viewBox="0 0 100 100">
+                <path class="gauge-bg" d="M 10,50 A 40,40 0 0,1 90,50" />
+                <path id="gauge-progress-bar" class="gauge-progress" d="M 10,50 A 40,40 0 0,1 90,50" />
+              </svg>
+              <div class="gauge-value" id="bmi-value">24.1</div>
+            </div>
+
+            <div class="bmi-category-badge" id="bmi-category">Optimal Fitness</div>
+
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 20px;">
+              Target Daily Caloric Intake:
+            </p>
+
+            <div class="calorie-breakdown">
+              <div class="calorie-box">
+                <div class="goal-title">Fat Loss</div>
+                <div class="calories-count" id="cal-fat-loss" style="color: var(--accent-orange);">2,050 kcal</div>
+              </div>
+              <div class="calorie-box">
+                <div class="goal-title">Maintain</div>
+                <div class="calories-count" id="cal-maintain">2,550 kcal</div>
+              </div>
+              <div class="calorie-box">
+                <div class="goal-title">Muscle Gain</div>
+                <div class="calories-count" id="cal-muscle" style="color: #38bdf8;">2,950 kcal</div>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-sm btn-block open-trial-modal" style="margin-top: 24px;" data-plan="pro">
+              Get My Custom Meal & Workout Plan
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filterable Class Schedule -->
+    <section class="section-padding" id="schedule">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Timetable</span>
+          <h2 class="section-title">Weekly Class Schedule</h2>
+          <p class="section-subtitle">
+            Filter by day or training category to discover sessions that match your routine. All classes led by certified master coaches.
+          </p>
+        </div>
+
+        <div class="schedule-controls">
+          <!-- Day Filters -->
+          <div class="filter-pills" id="day-filters">
+            <button class="filter-pill day-pill active" data-day="all">All Days</button>
+            <button class="filter-pill day-pill" data-day="mon">Monday</button>
+            <button class="filter-pill day-pill" data-day="tue">Tuesday</button>
+            <button class="filter-pill day-pill" data-day="wed">Wednesday</button>
+            <button class="filter-pill day-pill" data-day="thu">Thursday</button>
+            <button class="filter-pill day-pill" data-day="fri">Friday</button>
+            <button class="filter-pill day-pill" data-day="sat">Saturday</button>
+          </div>
+
+          <!-- Discipline Filters -->
+          <div class="filter-pills" id="type-filters">
+            <button class="filter-pill type-pill active" data-type="all">All Styles</button>
+            <button class="filter-pill type-pill" data-type="hiit">HIIT & Burn</button>
+            <button class="filter-pill type-pill" data-type="strength">Strength</button>
+            <button class="filter-pill type-pill" data-type="crossfit">Cross-Training</button>
+            <button class="filter-pill type-pill" data-type="boxing">Boxing</button>
+            <button class="filter-pill type-pill" data-type="yoga">Yoga & Mobility</button>
+          </div>
+        </div>
+
+        <!-- Schedule Grid Cards -->
+        <div class="schedule-grid" id="schedule-grid">
+          <div class="glass-card schedule-card" data-days="mon wed fri" data-type="hiit">
+            <div>
+              <div class="schedule-time">06:30 AM – 07:15 AM</div>
+              <div class="schedule-class-name">Apex Morning Inferno</div>
+              <div class="schedule-coach">Coach Marcus Cole • HIIT Room 1</div>
+            </div>
+            <div class="schedule-footer">
+              <span class="program-badge">5 Spots Left</span>
+              <button class="btn btn-primary btn-sm btn-book-class" data-class="Apex Morning Inferno (06:30 AM)">Book</button>
+            </div>
+          </div>
+
+          <div class="glass-card schedule-card" data-days="mon wed fri sat" data-type="strength">
+            <div>
+              <div class="schedule-time">08:00 AM – 09:00 AM</div>
+              <div class="schedule-class-name">Heavy Iron Barbell Club</div>
+              <div class="schedule-coach">Coach Sarah Jenkins • Power Rig</div>
+            </div>
+            <div class="schedule-footer">
+              <span class="program-badge">3 Spots Left</span>
+              <button class="btn btn-primary btn-sm btn-book-class" data-class="Heavy Iron Barbell Club (08:00 AM)">Book</button>
+            </div>
+          </div>
+
+          <div class="glass-card schedule-card" data-days="tue thu sat" data-type="boxing">
+            <div>
+              <div class="schedule-time">10:00 AM – 10:50 AM</div>
+              <div class="schedule-class-name">Championship Bag Striking</div>
+              <div class="schedule-coach">Coach Ray Ramirez • Combat Arena</div>
+            </div>
+            <div class="schedule-footer">
+              <span class="program-badge">8 Spots Left</span>
+              <button class="btn btn-primary btn-sm btn-book-class" data-class="Championship Bag Striking (10:00 AM)">Book</button>
+            </div>
+          </div>
+
+          <div class="glass-card schedule-card" data-days="tue thu" data-type="crossfit">
+            <div>
+              <div class="schedule-time">12:15 PM – 01:15 PM</div>
+              <div class="schedule-class-name">MetCon Functional Engine</div>
+              <div class="schedule-coach">Coach Marcus Cole • Main Deck</div>
+            </div>
+            <div class="schedule-footer">
+              <span class="program-badge">4 Spots Left</span>
+              <button class="btn btn-primary btn-sm btn-book-class" data-class="MetCon Functional Engine (12:15 PM)">Book</button>
+            </div>
+          </div>
+
+          <div class="glass-card schedule-card" data-days="mon wed fri" data-type="yoga">
+            <div>
+              <div class="schedule-time">05:30 PM – 06:20 PM</div>
+              <div class="schedule-class-name">Asana Flow & Deep Reset</div>
+              <div class="schedule-coach">Coach Elena Rostova • Zen Studio</div>
+            </div>
+            <div class="schedule-footer">
+              <span class="program-badge">Open Access</span>
+              <button class="btn btn-primary btn-sm btn-book-class" data-class="Asana Flow & Deep Reset (05:30 PM)">Book</button>
+            </div>
+          </div>
+
+          <div class="glass-card schedule-card" data-days="mon tue wed thu fri" data-type="hiit">
+            <div>
+              <div class="schedule-time">07:00 PM – 07:45 PM</div>
+              <div class="schedule-class-name">Night Shred Blitz</div>
+              <div class="schedule-coach">Coach Sarah Jenkins • HIIT Room 1</div>
+            </div>
+            <div class="schedule-footer">
+              <span class="program-badge">2 Spots Left</span>
+              <button class="btn btn-primary btn-sm btn-book-class" data-class="Night Shred Blitz (07:00 PM)">Book</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trainer Spotlight -->
+    <section class="section-padding" id="trainers" style="background: rgba(19, 27, 46, 0.25);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Elite Mentors</span>
+          <h2 class="section-title">Meet The Coaches</h2>
+          <p class="section-subtitle">
+            Our coaching roster brings Olympic-level certifications, biomechanical science, and relentless energy to your personal fitness journey.
+          </p>
+        </div>
+
+        <div class="trainers-grid">
+          <div class="glass-card trainer-card">
+            <div class="trainer-img-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=700&q=80" 
+                alt="Head Strength Coach Marcus Cole" 
+                class="trainer-img"
+              >
+            </div>
+            <div class="trainer-info">
+              <h3 class="trainer-name">Marcus Cole</h3>
+              <div class="trainer-role">Head Strength & Conditioning</div>
+              <p class="trainer-cert">CSCS, USA Weightlifting Level 2 • 11 Years Coaching</p>
+              <div class="trainer-socials">
+                <a href="#trainers" class="social-icon" aria-label="Instagram">IG</a>
+                <a href="#trainers" class="social-icon" aria-label="LinkedIn">IN</a>
+                <a href="#trainers" class="social-icon" aria-label="Twitter">X</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card trainer-card">
+            <div class="trainer-img-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=700&q=80" 
+                alt="HIIT Director Sarah Jenkins" 
+                class="trainer-img"
+              >
+            </div>
+            <div class="trainer-info">
+              <h3 class="trainer-name">Sarah Jenkins</h3>
+              <div class="trainer-role">Director of HIIT & Endurance</div>
+              <p class="trainer-cert">NASM-CPT, Precision Nutrition L1 • Former Track Athlete</p>
+              <div class="trainer-socials">
+                <a href="#trainers" class="social-icon" aria-label="Instagram">IG</a>
+                <a href="#trainers" class="social-icon" aria-label="LinkedIn">IN</a>
+                <a href="#trainers" class="social-icon" aria-label="Twitter">X</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card trainer-card">
+            <div class="trainer-img-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?auto=format&fit=crop&w=700&q=80" 
+                alt="Mobility Coach Elena Rostova" 
+                class="trainer-img"
+              >
+            </div>
+            <div class="trainer-info">
+              <h3 class="trainer-name">Elena Rostova</h3>
+              <div class="trainer-role">Mobility & Functional Flow</div>
+              <p class="trainer-cert">500-hr E-RYT, FRC Mobility Specialist • Kinesiology B.S.</p>
+              <div class="trainer-socials">
+                <a href="#trainers" class="social-icon" aria-label="Instagram">IG</a>
+                <a href="#trainers" class="social-icon" aria-label="LinkedIn">IN</a>
+                <a href="#trainers" class="social-icon" aria-label="Twitter">X</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card trainer-card">
+            <div class="trainer-img-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=700&q=80" 
+                alt="Combat Coach Ray Ramirez" 
+                class="trainer-img"
+              >
+            </div>
+            <div class="trainer-info">
+              <h3 class="trainer-name">Ray Ramirez</h3>
+              <div class="trainer-role">Combat & Boxing Specialist</div>
+              <p class="trainer-cert">Golden Gloves Champion, ACE Certified Master Coach</p>
+              <div class="trainer-socials">
+                <a href="#trainers" class="social-icon" aria-label="Instagram">IG</a>
+                <a href="#trainers" class="social-icon" aria-label="LinkedIn">IN</a>
+                <a href="#trainers" class="social-icon" aria-label="Twitter">X</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing & Memberships -->
+    <section class="section-padding" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Flexible Membership</span>
+          <h2 class="section-title">Invest In Your Best Self</h2>
+          <p class="section-subtitle">
+            No long-term lock-in contracts. Cancel or upgrade anytime with 1-click simplicity. All memberships include club amenities and recovery sauna.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="glass-card pricing-card">
+            <h3 class="plan-name">Basic</h3>
+            <p class="plan-desc">Essential open-gym access and foundational cardio equipment.</p>
+            <div class="plan-price">$29<span>/month</span></div>
+
+            <div class="plan-features">
+              <div class="feature-item included"><span class="feature-icon">✓</span> Full Open Gym Access</div>
+              <div class="feature-item included"><span class="feature-icon">✓</span> Locker & Shower Amenities</div>
+              <div class="feature-item included"><span class="feature-icon">✓</span> Apex Mobile Tracking App</div>
+              <div class="feature-item"><span class="feature-icon" style="color: var(--text-dim);">✕</span> Unlimited Group HIIT Classes</div>
+              <div class="feature-item"><span class="feature-icon" style="color: var(--text-dim);">✕</span> 1-on-1 Monthly Coach Check-in</div>
+              <div class="feature-item"><span class="feature-icon" style="color: var(--text-dim);">✕</span> Infrared Sauna & Cold Plunge</div>
+            </div>
+
+            <button class="btn btn-secondary btn-block open-trial-modal" data-plan="basic">
+              Choose Basic
+            </button>
+          </div>
+
+          <div class="glass-card pricing-card popular">
+            <span class="popular-badge">Most Popular</span>
+            <h3 class="plan-name text-lime">Pro Athlete</h3>
+            <p class="plan-desc">Our flagship plan with unlimited coach-led group classes and recovery.</p>
+            <div class="plan-price">$59<span>/month</span></div>
+
+            <div class="plan-features">
+              <div class="feature-item included"><span class="feature-icon">✓</span> Unlimited All-Club Access</div>
+              <div class="feature-item included"><span class="feature-icon">✓</span> Unlimited Group Classes (HIIT, Yoga, Box)</div>
+              <div class="feature-item included"><span class="feature-icon">✓</span> Infrared Sauna & Cryo Plunge Access</div>
+              <div class="feature-item included"><span class="feature-icon">✓</span> Personalized Nutrition Macro Blueprint</div>
+              <div class="feature-item included"><span class="feature-icon">✓</span> Monthly InBody Composition Scan</div>
+              <div class="feature-item"><span class="feature-icon" style="color: var(--text-dim);">✕</span> Weekly Dedicated 1-on-1 PT Session</div>
+            </div>
+
+            <button class="btn btn-primary btn-block open-trial-modal" data-plan="pro">
+              Get Started (7 Days Free)
+            </button>
+          </div>
+
+          <div class="glass-card pricing-card">
+            <h3 class="plan-name">Apex Elite</h3>
+            <p class="plan-desc">Full VIP protocol featuring dedicated weekly 1-on-1 personal coaching.</p>
+            <div class="plan-price">$99<span>/month</span></div>
+
+            <div class="plan-features">
+              <div class="feature-item included"><span class="feature-icon">✓</span> All Pro Membership Perks</div>
+              <div class="feature-item included"><span class="feature-icon">✓</span> 4x Dedicated 1-on-1 PT Sessions / Month</div>
+              <div class="feature-item included"><span class="feature-icon">✓</span> Bi-weekly Biometric & Macro Audits</div>
+              <div class="feature-item included"><span class="feature-icon">✓</span> Unlimited Guest Passes (2 per month)</div>
+              <div class="feature-item included"><span class="feature-icon">✓</span> Priority Schedule Reservation</div>
+              <div class="feature-item included"><span class="feature-icon">✓</span> Apex Performance Apparel Starter Kit</div>
+            </div>
+
+            <button class="btn btn-secondary btn-block open-trial-modal" data-plan="elite">
+              Choose Elite
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials & Social Proof -->
+    <section class="section-padding" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Proven Results</span>
+          <h2 class="section-title">Athlete Transformations</h2>
+          <p class="section-subtitle">
+            Real progress from members who committed to the ApexFit system and shattered their personal records.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="glass-card testimonial-card">
+            <div class="star-rating">★★★★★</div>
+            <p class="testimonial-quote">
+              "ApexFit completely rewired my routine. In 16 weeks I dropped 18 lbs of fat while adding 40 lbs to my deadlift. The community accountability and coach Marcus are unmatched."
+            </p>
+            <div class="member-info">
+              <img 
+                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=120&q=80" 
+                alt="David Chen" 
+                class="member-avatar"
+              >
+              <div class="member-details">
+                <h5>David Chen</h5>
+                <p>Member for 1 Year • Lost 18 lbs</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card testimonial-card">
+            <div class="star-rating">★★★★★</div>
+            <p class="testimonial-quote">
+              "The high-energy HIIT workouts and recovery sauna have cured my chronic back tightness and boosted my daily work productivity. Hands down the highest quality gym facility in town."
+            </p>
+            <div class="member-info">
+              <img 
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=120&q=80" 
+                alt="Jessica Torres" 
+                class="member-avatar"
+              >
+              <div class="member-details">
+                <h5>Jessica Torres</h5>
+                <p>Member for 8 Months • Marathon Finisher</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card testimonial-card">
+            <div class="star-rating">★★★★★</div>
+            <p class="testimonial-quote">
+              "I used to wander aimlessly between machines at commercial gyms. ApexFit gave me tailored macronutrient targets and periodized strength blocks. Truly game-changing coaching."
+            </p>
+            <div class="member-info">
+              <img 
+                src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=120&q=80" 
+                alt="Liam Gallagher" 
+                class="member-avatar"
+              >
+              <div class="member-details">
+                <h5>Liam Gallagher</h5>
+                <p>Member for 6 Months • Gained 9 lbs Muscle</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lead Capture & Free Protocol Banner -->
+    <section class="lead-capture-section">
+      <div class="container">
+        <div class="lead-box">
+          <div>
+            <span class="section-tag" style="margin-bottom: 12px;">Free Resource</span>
+            <h2 class="section-title" style="margin-bottom: 12px;">
+              Get The 7-Day Apex <span class="text-lime">Fuel & Shred</span> Guide
+            </h2>
+            <p style="color: var(--text-muted); font-size: 1rem;">
+              Download our signature 7-day high-performance training protocol, macro recipes, and mobility stretches for free.
+            </p>
+          </div>
+
+          <form id="guide-download-form" class="lead-form">
+            <input 
+              type="email" 
+              class="lead-input" 
+              placeholder="Enter your email address..." 
+              required 
+              aria-label="Email address for free guide"
+            >
+            <button type="submit" class="btn btn-primary">
+              Send Guide
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <div class="logo-icon">▲</div>
+            APEX<span>FIT</span>
+          </a>
+          <p>
+            Where scientific programming meets elite athletic culture. Transform your body, fortify your mind, and conquer every standard.
+          </p>
+          <div class="trainer-socials">
+            <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+            <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+            <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+            <a href="#" class="social-icon" aria-label="TikTok">TT</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Disciplines</h4>
+          <div class="footer-links">
+            <a href="#programs" class="footer-link">Strength & Power</a>
+            <a href="#programs" class="footer-link">Apex HIIT & Burn</a>
+            <a href="#programs" class="footer-link">Cross-Training WOD</a>
+            <a href="#programs" class="footer-link">Dynamic Mobility</a>
+            <a href="#programs" class="footer-link">Boxing Combat</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Club Details</h4>
+          <div class="footer-links">
+            <a href="#schedule" class="footer-link">Live Timetable</a>
+            <a href="#trainers" class="footer-link">Master Coaches</a>
+            <a href="#pricing" class="footer-link">Membership Tiers</a>
+            <a href="#calculator" class="footer-link">BMI & Calorie Calc</a>
+            <a href="#testimonials" class="footer-link">Member Stories</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Location & Hours</h4>
+          <div class="footer-links" style="color: var(--text-muted); font-size: 0.9rem;">
+            <p><strong>HQ:</strong> 440 Performance Blvd, Metro City</p>
+            <p style="margin-top: 8px;"><strong>Mon – Fri:</strong> 5:00 AM – 11:00 PM</p>
+            <p><strong>Sat – Sun:</strong> 6:00 AM – 9:00 PM</p>
+            <p style="margin-top: 8px;"><strong>Support:</strong> hello@apexfit.club</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 ApexFit Club Inc. All rights reserved. Built for champions.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#" style="color: var(--text-dim);">Privacy Policy</a>
+          <a href="#" style="color: var(--text-dim);">Terms of Service</a>
+          <a href="#" style="color: var(--text-dim);">Liability Waiver</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- HTML5 Native Dialog Modal for Free Pass & Booking -->
+  <dialog class="modal" id="trial-modal" aria-labelledby="modal-title">
+    <div class="modal-header">
+      <h3 class="modal-title" id="modal-title">Start Your 7-Day Free Pass</h3>
+      <button type="button" class="modal-close" id="modal-close-btn" aria-label="Close modal">✕</button>
+    </div>
+    <form id="modal-trial-form" class="modal-body">
+      <p style="color: var(--text-muted); font-size: 0.9rem;">
+        Enjoy full VIP access to all classes, strength rigs, sauna, and an initial body composition scan on us.
+      </p>
+
+      <div class="form-group">
+        <label class="form-label" for="modal-name">Full Name</label>
+        <input type="text" id="modal-name" class="form-input" placeholder="e.g. Alex Morgan" required>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="modal-email">Email Address</label>
+        <input type="email" id="modal-email" class="form-input" placeholder="alex@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="modal-phone">Phone Number</label>
+        <input type="tel" id="modal-phone" class="form-input" placeholder="(555) 000-1234" required>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="modal-plan-select">Selected Program / Tier</label>
+        <select id="modal-plan-select" class="form-select">
+          <option value="pro">Pro Athlete ($59/mo - 7 Days Free)</option>
+          <option value="basic">Basic Gym Access ($29/mo)</option>
+          <option value="elite">Apex Elite + Personal Coaching ($99/mo)</option>
+          <option value="class-pass">Single Class Guest Pass</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block" style="margin-top: 10px;">
+        Activate My VIP Pass Now
+      </button>
+    </form>
+  </dialog>
+
+  <!-- JavaScript App Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
